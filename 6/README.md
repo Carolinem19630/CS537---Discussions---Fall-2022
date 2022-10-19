@@ -143,3 +143,8 @@ xv6 works with virtual addresses in some places, physical addresses in others.
 1. https://www.cse.iitb.ac.in/~mythili/os/notes/old-xv6/xv6-memory.pdf
 2. https://www.youtube.com/watch?v=es1JjdlCBms
 
+## My Notes
+Right now, xv6 allocates pages to address 0 -> we want to change it to not allocate to address 0. 
+vm.c, exec function and fork function, mmu.h -> gets index into page table index and page directory index + has flags. 
+
+Going to need to do bitwise operations. Such as comma, & and |. 
